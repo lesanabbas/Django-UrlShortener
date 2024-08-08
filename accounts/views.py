@@ -10,4 +10,4 @@ def indexView(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect("/")
     else:
-        return render(request, "accounts/index.html", {'BASE_URL': os.getenv("BASE_URL")})
+        return render(request, "accounts/index.html", {'BASE_URL': "https://snaplinks.vercel.app"})
